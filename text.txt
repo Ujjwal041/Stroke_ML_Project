@@ -1,0 +1,31 @@
+Processes bulk claims via Excel upload/download,
+ running the full validation pipeline across 
+ thousands of claims in a single batch with 
+ structured results output.
+
+Uses an LLM to generate a plain-language 
+explanation for each Valid/Invalid/Needs Review 
+verdict, citing the specific plan document rule
+ that supports the outcome.
+
+ Automatically classifies and explains claim
+  rejections by standard reject codes 
+  (e.g., Benefit Exclusion, Prior Authorization
+   Required, Plan Limitations Exceeded).
+
+Provides a live dashboard showing scenario 
+breakdowns (Paid-Paid, Paid-Reject, Reject-Reject,
+ Reject-Paid), validation status, and drill-down
+  by claim number.
+
+
+Parses BPS and CPM plan documents into a knowledge
+ graph and vector index, enabling precise retrieval
+  of copay, tier, PA, and exclusion rules for 
+  validation.
+
+
+Automatically compares claims run in production
+ against the same claims re-run in the certification
+  environment, flagging status, copay, tier, and
+   reject-code mismatches.
